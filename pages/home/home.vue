@@ -1,7 +1,7 @@
 <template>
 	<view>
+		<!-- 未登录的模板 -->
 		<template v-if="!islogin">
-			<!-- 未登录 -->
 			<view class="u-f-ajc">登陆球球，体验更多功能</view>
 			<!-- 第三方登陆 -->
 			<other-login></other-login>
@@ -11,6 +11,7 @@
 				<view class="icon iconfont icon-jinru"></view>
 			</view>
 		</template>
+		<!-- 登录后的模板 -->
 		<template v-else>
 			<!-- 登陆 -->
 			<home-info :homeinfo="homeinfo"></home-info>
@@ -74,6 +75,7 @@ export default {
 	},
 	methods:{
 		openLogin(){
+			console.log('123')
 			uni.navigateTo({
 				url: '../login/login'
 			});

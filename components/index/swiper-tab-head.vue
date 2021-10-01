@@ -12,6 +12,7 @@
 </template>
 
 <script>
+	// 顶部可拖动选项卡
 export default {
 	props: {
 		tabBars: Array,

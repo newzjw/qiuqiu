@@ -17,6 +17,7 @@
 				<view class="index-list-playinfo">{{ item.playnum }}次播放 {{ item.long }}</view>
 			</template>
 		</view>
+		<!-- 顶、踩、评论、转发 -->
 		<view class="index-list4">
 			<view class="left">
 				<view :class="{ active: infonum.index == 1 }" @tap="caozuo('ding')">

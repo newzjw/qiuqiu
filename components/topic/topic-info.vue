@@ -1,6 +1,5 @@
 <template>
 	<view>
-		
 		<!-- 模糊背景 -->
 		<view class="topic-bg">
 			<image :src="item.titlepic" mode="aspectFill" lazy-load></image>
